@@ -9,7 +9,7 @@ def send_reminder_email():
         # Email configuration
         sender_email = "seunpaul003@gmail.com"
         receiver_email = "leslieajayi27@gmail.com"
-        password = "123456Seven88"  # Use an app password for Gmail
+        password = ""  # Use an app password for Gmail
 
         # Create message
         message = MIMEMultipart()

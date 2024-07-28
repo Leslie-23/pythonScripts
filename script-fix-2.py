@@ -13,7 +13,7 @@ def send_email():
     
     sender_email = "leslieajayi27@gmail.com"
     receiver_email = "leslieajayi27@gmail.com"
-    password = "123456Seven88"  # Use an app password for Gmail
+    password = ""  # Use an app password for Gmail
 
     # Create the email message
     msg = MIMEMultipart()
