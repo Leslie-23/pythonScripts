@@ -30,7 +30,7 @@ def send_reminder_email():
         print(f"Failed to send email: {e}")
 
 # Schedule the job
-schedule.every().day.at("19:24").do(send_reminder_email)
+schedule.every().day.at("19:28").do(send_reminder_email)
 
 # Keep the script running
 while True:
