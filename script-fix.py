@@ -22,7 +22,7 @@ def send_reminder_email():
         message.attach(MIMEText(body, "plain"))
 
         # Send email
-        with smtplib.SMTP_SSL("smtp.gmail.com", 465) as server:
+        with smtplib.SMTP_SSL("smtp.gmail.com", 587) as server:
             server.login(sender_email, password)
             server.sendmail(sender_email, receiver_email, message.as_string())
             print("Reminder email sent successfully!")
@@ -30,7 +30,7 @@ def send_reminder_email():
         print(f"Failed to send email: {e}")
 
 # Schedule the job
-schedule.every().day.at("19:28").do(send_reminder_email)
+schedule.every().day.at("19:43").do(send_reminder_email)
 
 # Keep the script running
 while True:
